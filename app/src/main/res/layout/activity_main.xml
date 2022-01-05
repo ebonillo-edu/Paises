@@ -20,6 +20,24 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <include
+        layout="@layout/content_main" />
+
+    <!--com.google.android.material.bottomnavigation.BottomNavigationView
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+        android:id="@+id/menu_pie"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        app:menu="@menu/menu_footer" /-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menu_pie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:labelVisibilityMode="selected"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+        android:layout_gravity="bottom"
+        app:layout_insetEdge="bottom"
+        app:menu="@menu/menu_footer" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

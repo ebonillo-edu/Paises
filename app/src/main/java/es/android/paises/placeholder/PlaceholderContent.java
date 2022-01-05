@@ -34,7 +34,8 @@ public class PlaceholderContent {
     private static Pais getItem(Resources resources, String packageName, String country, int id) {
         String [] countryDetail = resources
                 .getStringArray(resources.getIdentifier(country, "array", packageName));
-        return new Pais(id+"", countryDetail[0], countryDetail[1], countryDetail[2]);
+        String [] coordenadas = countryDetail[4].split(",");
+        return new Pais(id+"", countryDetail[0], countryDetail[1], countryDetail[2], countryDetail[3], Double.parseDouble(coordenadas[0]), Double.parseDouble(coordenadas[1]));
     }
 
     /**
@@ -45,12 +46,19 @@ public class PlaceholderContent {
         public final String nombre;
         public final String foto;
         public final String detalles;
+        public final String bandera;
+        public final double latitud;
+        public final double longitud;
 
-        public Pais(String id, String nombre, String foto, String detalles) {
+
+        public Pais(String id, String nombre, String foto, String detalles, String bandera, double latitud, double longitud) {
             this.id = id;
             this.nombre = nombre;
             this.foto = foto;
             this.detalles = detalles;
+            this.bandera = bandera;
+            this.latitud = latitud;
+            this.longitud = longitud;
         }
 
         protected Pais(Parcel in) {
@@ -58,6 +66,9 @@ public class PlaceholderContent {
             nombre = in.readString();
             foto = in.readString();
             detalles = in.readString();
+            bandera = in.readString();
+            latitud = in.readDouble();
+            longitud = in.readDouble();
         }
 
         public static final Creator<Pais> CREATOR = new Creator<Pais>() {
@@ -74,12 +85,7 @@ public class PlaceholderContent {
 
         @Override
         public String toString() {
-            return "Pais{" +
-                    "id='" + id + '\'' +
-                    ", nombre='" + nombre + '\'' +
-                    ", foto='" + foto + '\'' +
-                    ", detalles='" + detalles + '\'' +
-                    '}';
+            return "Pais{" + nombre + '}';
         }
 
         @Override
@@ -93,6 +99,9 @@ public class PlaceholderContent {
             dest.writeString(nombre);
             dest.writeString(foto);
             dest.writeString(detalles);
+            dest.writeString(bandera);
+            dest.writeDouble(latitud);
+            dest.writeDouble(longitud);
         }
     }
 }

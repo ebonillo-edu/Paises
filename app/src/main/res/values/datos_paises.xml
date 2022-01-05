@@ -19,7 +19,15 @@
             El país es conocido por el baile y la música del tango. Su gran capital cosmopolita, Buenos Aires,
             se centra en la Plaza de Mayo, rodeada por imponentes edificios del siglo XIX, como la Casa Rosada,
             el icónico palacio presidencial.
+            El nombre oficial del país es República Argentina, literalmente, "República del Plata". Por elipsis, suele denominarse, "la Argentina". El uso sin artículo, está muy extendido y no se considera incorrecto, si bien la Academia Argentina de Letras lo ha calificado de "reprensible".
+            Argentina es el femenino del adjetivo poético "argentino" que indica algo que tiene cualidades de la plata o relacionado con ella, sustantivo formado a partir del adjetivo *h₂erǵ- que significa: “blanco” o bien "brillante".
+            Argentina fue una denominación poética de los países ribereños del Plata, río llamado así porque era un acceso a los yacimientos argentíferos del Alto Perú, donde la ciudad de La Plata (Charcas, actual Sucre) era también llamada Civitas Argentina (Ciudad Argentina).
+            El uso como topónimo, aunque con una declinación diferente, aparece por primera vez en 1554 en el mapa de Lopo Homem: donde los territorios de la región litoral son llamados: Terra Argentea. Más tarde,en 1602, Martín del Barco Centenera la elige, a imitación de La Araucana, como título de un poema épico sobre la conquista: La Argentina. Desde entonces y hasta finales del siglo XVIII, Argentina y argentino fueron denominaciones literarias del territorio y los pobladores de la región rioplatense.
+            Con la creación del Virreinato del Río de la Plata y su posterior independencia como Provincias Unidas del Río de la Plata, Argentina y argentino se hicieron más comunes, aunque a veces con una connotación restringida a Buenos Aires y las provincias cercanas.
+            La Constitución de 1826, usó Argentina como nombre oficial del Estado y, desde entonces, a pesar del rechazo a dicha constitución, fue usado de manera habitual. A partir de la década de 1830, Rosas, formalmente gobernador de Buenos Aires, era el "encargado de dirigir las relaciones exteriores de la República Argentina".
+            La Constitución Argentina de 1853 indica que: "Provincias Unidas del Río de la Plata", "República Argentina" y "Confederación Argentina" son los nombres del estado, mientras que "Nación Argentina" es usado para sancionar las leyes. En 1860, en la ciudad de Paraná, entonces capital de la Confederación Argentina, el presidente Derqui decretó que para "uniformar los actos administrativos" se usaría siempre República Argentina. Dos años más tarde, en 1862, Bartolomé Mitre, primer presidente del país reunificado, se refirió a su cargo como: presidente de la Nación Argentina.
         </item>
+        <item>-34.57934708731643,-58.39416202259645</item>
     </string-array>
     <string-array name="australia">
         <item>Australia</item>
@@ -31,6 +39,7 @@
             la Gran Barrera de Coral, una vasta área natural desértica conocida como Outback y especies animales únicas,
             como el canguro y el ornitorrinco.
         </item>
+        <item>-35.29428606279023,149.12702653786914</item>
     </string-array>
     <string-array name="belgica">
         <item>Bélgica</item>
@@ -41,6 +50,7 @@
             y una comunidad de habla alemana en el este. La capital bilingüe, Bruselas, tiene casas consistoriales adornadas en el Gran Palacio y
             elegantes edificios art-nouveau.
         </item>
+        <item>50.87502990472972,4.361329879152338</item>
     </string-array>
     <string-array name="canada">
         <item>Canadá</item>
@@ -52,6 +62,7 @@
             el Parque Nacional Banff ubicado en un lago en las Montañas Rocosas. También incluye las cataratas del Niágara,
             un famoso grupo de enormes cascadas.
         </item>
+        <item>45.42357507395697,-75.69042541869666</item>
     </string-array>
     <string-array name="dinamarca">
         <item>Dinamarca</item>
@@ -63,6 +74,7 @@
             Odense es la ciudad natal del escritor Hans Christian Andersen, con un centro medieval con calles de adoquines y casas
             con entramado de madera.
         </item>
+        <item>55.678797615860624,12.569789704605629</item>
     </string-array>
     <string-array name="espana">
         <item>España</item>
@@ -73,5 +85,6 @@
             Segovia tiene un castillo medieval (el Alcázar) y un acueducto romano intacto. La capital de Cataluña,
             Barcelona, se caracteriza por las obras modernistas extravagantes de Antoni Gaudí, como el templo de la Sagrada Familia.
         </item>
+        <item>40.42584859497664,-3.7035779554209958</item>
     </string-array>
 </resources>

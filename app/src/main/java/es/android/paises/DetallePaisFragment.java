@@ -1,8 +1,10 @@
 package es.android.paises;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,15 +34,21 @@ public class DetallePaisFragment extends Fragment {
         binding = FragmentDetallePaisBinding.inflate(inflater, container, false);
 
         ImageView iv = binding.foto;
-        iv.setImageResource(getImageId(mPais.foto));
+        iv.setImageDrawable(Drawable.createFromStream(getClass().getResourceAsStream("/" + mPais.foto), ""));
+        iv.setOnLongClickListener(v -> {
+            Bundle args = new Bundle();
+            args.putString("pais", mPais.nombre);
+            args.putDouble("latitud", mPais.latitud);
+            args.putDouble("longitud", mPais.longitud);
+
+            Navigation.findNavController(v)
+                    .navigate(R.id.action_detallePaisFragment_to_mapsFragment, args);
+            return true;
+        });
+
         TextView tv = binding.descpcion;
         tv.setText(mPais.detalles);
 
         return binding.getRoot();
-    }
-
-    private int getImageId(String imagePath) {
-        String imageName = imagePath.substring(imagePath.lastIndexOf("/")+1, imagePath.lastIndexOf("."));
-        return getResources().getIdentifier(imageName, "drawable", getContext().getPackageName());
     }
 }

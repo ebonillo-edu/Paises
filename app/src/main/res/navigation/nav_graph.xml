@@ -11,11 +11,7 @@
         tools:layout="@layout/fragment_paises_list" >
         <action
             android:id="@+id/action_paisesFragment_to_detallePaisFragment"
-            app:destination="@id/detallePaisFragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out"
-            app:popEnterAnim="@android:anim/fade_in"
-            app:popExitAnim="@android:anim/fade_out" />
+            app:destination="@id/detallePaisFragment" />
     </fragment>
     <fragment
         android:id="@+id/detallePaisFragment"
@@ -25,6 +21,9 @@
         <argument
             android:name="title"
             app:argType="string"/>
+        <action
+            android:id="@+id/action_detallePaisFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
     </fragment>
     <fragment
         android:id="@+id/acercaDeFragment"
@@ -40,4 +39,10 @@
         android:name="es.android.paises.ConocimientosPaisFragment"
         android:label="Juego banderas"
         tools:layout="@layout/fragment_conocimientos_pais" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="es.android.paises.MapsFragment"
+        android:label="{pais}"
+        tools:layout="@layout/fragment_maps" />
+
 </navigation>

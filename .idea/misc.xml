@@ -12,8 +12,12 @@
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.1716485507246377" />
         <entry key="app/src/main/res/layout/fragment_juego_banderas.xml" value="0.17481884057971014" />
         <entry key="app/src/main/res/layout/fragment_lista_paises.xml" value="0.1716485507246377" />
+        <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.1671195652173913" />
         <entry key="app/src/main/res/layout/fragment_pais.xml" value="0.1716485507246377" />
+        <entry key="app/src/main/res/layout/fragment_pais_card.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_paises_list.xml" value="0.1716485507246377" />
+        <entry key="app/src/main/res/layout/prueba.xml" value="0.335" />
+        <entry key="app/src/main/res/menu/menu_footer.xml" value="0.1296875" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.25" />
         <entry key="app/src/main/res/xml/root_preferences.xml" value="0.335" />
       </map>

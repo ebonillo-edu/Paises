@@ -2,23 +2,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="es.android.paises.MainActivity">
-    <item android:id="@+id/action_search"
-        android:title="Buscar"
-        app:actionViewClass="androidx.appcompat.widget.SearchView"
-        app:showAsAction="always"/>
+    <item
+        android:id="@+id/paisesFragment"
+        android:orderInCategory="99"
+        android:title="Inicio"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_baseline_home_24"/>
     <item
         android:id="@+id/settingsFragment"
         android:orderInCategory="100"
         android:title="@string/action_settings"
-        app:showAsAction="never"/>
-    <item
-        android:id="@+id/acercaDeFragment"
-        android:orderInCategory="99"
-        android:title="@string/acerca_de"
-        app:showAsAction="never"/>
+        app:showAsAction="never"
+        android:icon="@drawable/ic_baseline_settings_24"/>
     <item
         android:id="@+id/conocimientosPaisFragment"
         android:orderInCategory="101"
         android:title="¡Juega!"
-        app:showAsAction="never"/>
+        app:showAsAction="never"
+        android:icon="@drawable/ic_baseline_videogame_asset_24"/>
 </menu>
