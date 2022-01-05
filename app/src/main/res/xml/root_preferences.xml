@@ -1,0 +1,17 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="Apariencia">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="linea"
+            android:title="Mostrar línea de separación entre elementos del listado" />
+        <ListPreference
+            android:defaultValue="listado"
+            android:entries="@array/tipos_visualizacion"
+            android:entryValues="@array/valores_visualizacion"
+            android:key="tipo_visualizacion"
+            android:title="Formato del listado" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paises>
+    <pais nombre="argentina">
+        <nombre_mostrar>Argentina</nombre_mostrar>
+        <bandera>bandera_argentina.jpg</bandera>
+    </pais>
+    <pais nombre="australia">
+        <nombre_mostrar>Australia</nombre_mostrar>
+        <bandera>bandera_australia.jpg</bandera>
+    </pais>
+    <pais nombre="belgica">
+        <nombre_mostrar>Bélgica</nombre_mostrar>
+        <bandera>bandera_belgica.jpg</bandera>
+    </pais>
+    <pais nombre="dinamarca">
+        <nombre_mostrar>Dinamarca</nombre_mostrar>
+        <bandera>bandera_dinamarca.jpg</bandera>
+    </pais>
+</paises>

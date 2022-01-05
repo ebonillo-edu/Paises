@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="es.android.paises.MainActivity">
+    <item
+        android:id="@+id/settingsFragment"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/acercaDeFragment"
+        android:orderInCategory="99"
+        android:title="@string/acerca_de"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/conocimientosPaisFragment"
+        android:orderInCategory="101"
+        android:title="¡Juega!"
+        app:showAsAction="never" />
+</menu>

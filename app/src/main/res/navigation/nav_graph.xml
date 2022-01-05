@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/paisesFragment">
+    <fragment
+        android:id="@+id/paisesFragment"
+        android:name="es.android.paises.PaisesFragment"
+        android:label="@string/selecciona_pais"
+        tools:layout="@layout/fragment_paises_list" >
+        <action
+            android:id="@+id/action_paisesFragment_to_detallePaisFragment"
+            app:destination="@id/detallePaisFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/detallePaisFragment"
+        android:name="es.android.paises.DetallePaisFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_detalle_pais">
+        <argument
+            android:name="title"
+            app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/acercaDeFragment"
+        android:name="es.android.paises.AcercaDeFragment"
+        android:label="@string/acerca_de"
+        tools:layout="@layout/fragment_acerca_de" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="es.android.paises.SettingsFragment"
+        android:label="@string/action_settings"/>
+    <fragment
+        android:id="@+id/conocimientosPaisFragment"
+        android:name="es.android.paises.ConocimientosPaisFragment"
+        android:label="Juego banderas"
+        tools:layout="@layout/fragment_conocimientos_pais" />
+</navigation>
