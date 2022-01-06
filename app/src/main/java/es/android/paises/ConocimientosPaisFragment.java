@@ -64,6 +64,7 @@ public class ConocimientosPaisFragment extends Fragment {
             int seleccionado = binding.radioGroup.getCheckedRadioButtonId();
             CharSequence mensaje = seleccionado == respuestaCorrecta ? "¡Acertaste!" : "Fallaste";
             Snackbar.make(v, mensaje, Snackbar.LENGTH_INDEFINITE)
+                    .setAnchorView(getActivity().findViewById(R.id.menu_pie))
                     .setAction("Siguiente", v1 -> presentarPregunta())
                     .show();
             v.setEnabled(false);
@@ -88,7 +89,7 @@ public class ConocimientosPaisFragment extends Fragment {
         return respuestasPosibles;
     }
 
-    private void presentarPregunta() {
+    public void presentarPregunta() {
         if(preguntas.size() > 0) {
             binding.botonRespuesta.setEnabled(true);
 
